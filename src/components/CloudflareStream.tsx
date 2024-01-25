@@ -56,7 +56,7 @@ export const CloudflareStream = () => {
           src={videoIdOrSignedToken}
         />
 
-        <div className="w-full h-full absolute top-0 left-0 overflow-hidden">
+        <div className="w-full h-full absolute top-0 left-0 overflow-hidden pointer-events-none">
           {comments.map((comment: CommentType) => 
             <div 
               key={`comment-${comment.id}-${comment.createdAt}`} 
